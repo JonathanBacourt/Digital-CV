@@ -1,0 +1,47 @@
+html{
+    font-family: Open Sans, sans-serif;
+    /* font and backup fonts */
+    font-size: 20px;
+}
+header{
+    background-color: rgba(255, 251, 170, 0.777); 
+    padding-bottom: 1%;
+    /* padded the bottom to add some separations */
+    text-align: center;
+    text-transform: capitalize;
+    /* make sure my name is capitalized */
+}
+aside{
+    width: 30;
+    padding-left: 1%;
+    padding-right: 5%;
+    margin-left: 2%;
+    float: right;
+    background-color: rgba(69, 158, 235, 0.528);
+}
+table{
+    text-align: center;
+    
+}
+th, td{
+    padding: .1rem;
+    /* add some spaces between the cols and rows */
+}
+main{
+    background-color: aliceblue;
+    /* main back ground color */
+}
+h3{
+    text-decoration: underline;
+    /* underline these headers to make them stand out more amongst the text */
+}
+a{
+    text-decoration: none;
+    /* remove the underline from the links */
+}
+hr{
+    width: 50rem;
+}
+input{
+    height: 20px;
+}
