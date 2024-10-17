@@ -11,19 +11,19 @@
 
 <header >
     
- <h1 >jonathan bacourt <img align = "right" src="Selfie.png" alt="Jonathan Bacourt image"  height="100" width="75"></h1>
+ <h1 >jonathan bacourt <img align = "right" src="Selfie.png" alt="Jonathan Bacourt image" id="Selfie"  height="100" width="75"></h1>
                                                     <!-- image -->
  <h2 >Software Engineer</h2>
- <hr>
+
  <p > Phone: (407) 429-8536 &emsp; | &emsp; Email: JonathanBacourt@gmail.com</p>
  <!-- turn phone number into a link that calls and email into a link that starts an email to me -->
- <p > <b>GitHub: </b><a href="https://github.com/JonathanBacourt?tab=repositories">Github Repository</a> &emsp; <b>LinkedIn:</b> <a href="www.linkedin.com/in/jonathan-bacourt">LinkedIn profile </a></P>
+ <p > <b>GitHub: </b><a href="https://github.com/JonathanBacourt?tab=repositories">Github Repository</a> &emsp; <b>LinkedIn:</b> <a href="www.linkedin.com/in/jonathan-bacourt">LinkedIn profile </a></p>
 
 </header>
 <!-- main content of page. most of the pertinant information on my CV -->
 <main>
-    
-    <aside >
+    <section >
+    <aside class="bordered" >
         <!-- element to make a side bar -->
         <h4>Education</h4>
         <p>B.S Computer Science</p>
@@ -91,7 +91,9 @@
             <li>Collaboration</li>
         </ul>
     </aside >
-<section>
+</section>
+<section class="bordered">
+    <section>
     <!-- Projects section of CV to show coding implementations -->
     <h3>Projects</h3>
    <ol>
@@ -141,6 +143,7 @@
     </li>
    </ol>
 </section>
+
 <section>
     <!-- Experience Section of CV to show where I have worked and my accomplishments -->
     <h3>Experience</h3>
@@ -212,11 +215,11 @@
             </ul>
         </li>
     </ol>
-
 </section>
-<section>
+</section>
+<section class="bordered">
     <h3>Contact Me: </h3>
-    <form action="#">
+    <form action="#" id="Contact">
         <!-- inline labels chosen for readability -->
         <!-- # to simulate sending data -->
         <label>First Name:
@@ -228,26 +231,22 @@
             <input type="text" placeholder="Last Name" name="lname">
         </label>
         <br>
-        <br>
         <label>Email Address:
             <input type="text" placeholder="Email" name="email" required>
         </label>
         <br>
-        <br>
+
         <label>Position:
             <input type="text" placeholder="Position" name="pos" required>
         </label>
-        <br>
         <br>
         <label>Start Date:
             <input type="date" name="start">
         </label>
         <br>
-        <br>
         <label>Comments: <br>
             <textarea name="Coments" minlength="5" maxlength="512"cols="75" rows="10"></textarea>
         </label>
-        <br>
         <br>
         <button type="submit">Submit</button>
     </form>
