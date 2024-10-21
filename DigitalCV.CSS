@@ -1,41 +1,72 @@
 *{
     /* removed all default borders */
     border: 0px black solid;
+    box-sizing: border-box;
+
 }
 html{
     font-family: Open Sans, sans-serif;
     /* font and backup fonts */
     font-size: 20px;
+    background-color: rgb(193, 219, 242);
 }
 header{
-    background-color: rgba(255, 251, 170, 0.777); 
-    padding-bottom: 10px;
+
+    padding: 10px;
+    margin: 3%;
     /* padded the bottom to add some separations */
-    text-align: center;
     text-transform: capitalize;
     /* make sure my name is capitalized */
-    border: 2px black solid;
+    border-bottom: 2px black solid;
+    display: flex;
+    justify-content: space-between;
+    /* make the space between the elements even */
+    height: 400px;
 }
+
 img#Selfie{
     /* curved image edges and added border */
-    border-radius: 20%;
+    border-radius: 50%;
     border: 1px black solid;
     margin-right: 10px;
+    /* change photo to inline block so that other elements can be on the same line(improved look) */
+    display: inline-block;
+    /* photo on the left side at the top*/
+    align-self: flex-start;
+    justify-content: flex-start;
+    width: 10rem;
+    height: 10rem;
+    
 }
+#myname{
+    /* center my name */
+    align-self: center;
+
+}
+#contactinfo{
+    /* put the contact information on the right */
+    align-self: flex-end;
+    text-transform: none;
+}
+
+
 section.bordered{
     /* added border and siding to select sections */
     margin: 10px;
-    border: 3px black solid;
+    border-bottom: 2px black solid;
     padding: 5px;
 }
-aside{
+.aside{
     /* format aside  */
     width: 30;
     padding-left: 1%;
     padding-right: 5%;
     margin-right: 10px;
-    float: right;
-    background-color: rgba(69, 158, 235, 0.528);
+    background-color: rgb(174, 212, 245);
+    /* move aside to front and have it inline at the end*/
+    z-index: 10;
+    float: inline-end;
+
 }
 table{
     text-align: center;
@@ -46,14 +77,16 @@ th, td{
     /* add some spaces between the cols and rows */
 }
 main{
-    background-color: aliceblue;
+    background-color: rgb(193, 219, 242);
     /* main back ground color */
+    
 }
 body{
     /* put margin in body to show separation */
     margin: 10px;
     padding: 5px;
-    border: 1px black solid;
+    border: 2px black solid;
+    padding-right: 200px;
 }
 h2, h1{
     padding-bottom: 15px;
@@ -71,12 +104,32 @@ hr{
     width: 50rem;
 }
 
+.form{
+    /* center the items in the form */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px black solid;
+}
 form input {
     /* removed all outlines and put a bottom margin */
     outline: none;
     margin-bottom: 20px;
+    background-color: rgb(200, 247, 247);
+    
+}
+textarea{
+    background-color: rgb(200, 247, 247);
 }
 form input:hover, button:hover, textarea:hover{
     /* created hover selector for to show that these items are selectable */
     background-color: aqua;
+    border: 1px black solid;
+}
+form>button{
+    /* make button bigger */
+    height: 2rem;
+    width: 3rem;
+    background-color: rgb(200, 247, 247)
 }

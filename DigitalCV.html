@@ -10,20 +10,27 @@
 </head>
 
 <header >
-    
- <h1 >jonathan bacourt <img align = "right" src="Selfie.png" alt="Jonathan Bacourt image" id="Selfie"  height="100" width="75"></h1>
-                                                    <!-- image -->
- <h2 >Software Engineer</h2>
-
- <p > Phone: (407) 429-8536 &emsp; | &emsp; Email: JonathanBacourt@gmail.com</p>
- <!-- turn phone number into a link that calls and email into a link that starts an email to me -->
- <p > <b>GitHub: </b><a href="https://github.com/JonathanBacourt?tab=repositories">Github Repository</a> &emsp; <b>LinkedIn:</b> <a href="www.linkedin.com/in/jonathan-bacourt">LinkedIn profile </a></p>
+    <div>
+        <img align = "right" src="Selfie.png" alt="Jonathan Bacourt image" id="Selfie"  height="100" width="75">
+    <!-- image -->
+    </div>
+    <div id="myname">
+        <h1 >jonathan bacourt </h1>                                    
+        <h2 >Software Engineer</h2>
+    </div>   
+    <div id="contactinfo">   
+        <p > Phone: (407) 429-8536 <br> Email: JonathanBacourt@gmail.com</p>
+        <!-- turn phone number into a link that calls and email into a link that starts an email to me -->
+     
+   
+ 
+    </div>  
 
 </header>
 <!-- main content of page. most of the pertinant information on my CV -->
 <main>
     <section >
-    <aside class="bordered" >
+    <section class="aside" >
         <!-- element to make a side bar -->
         <h4>Education</h4>
         <p>B.S Computer Science</p>
@@ -90,10 +97,10 @@
                 Development</li>
             <li>Collaboration</li>
         </ul>
-    </aside >
+    </section >
 </section>
-<section class="bordered">
-    <section>
+<section >
+    <section class="bordered" >
     <!-- Projects section of CV to show coding implementations -->
     <h3>Projects</h3>
    <ol>
@@ -144,7 +151,7 @@
    </ol>
 </section>
 
-<section>
+<section >
     <!-- Experience Section of CV to show where I have worked and my accomplishments -->
     <h3>Experience</h3>
     <ol>
@@ -218,16 +225,21 @@
 </section>
 </section>
 <section class="bordered">
+   
+</section>
+</main>
+
+<footer >
+    <section class="form" id="Contact">
     <h3>Contact Me: </h3>
-    <form action="#" id="Contact">
+    <form action="#">
         <!-- inline labels chosen for readability -->
         <!-- # to simulate sending data -->
         <label>First Name:
             <input type="text" placeholder="First Name" name="fname">
         </label>
         
-        <label>&emsp;&emsp;Last Name:
-            <!-- &emsp; is spaces for formatting -->
+        <label>Last Name:
             <input type="text" placeholder="Last Name" name="lname">
         </label>
         <br>
@@ -250,11 +262,13 @@
         <br>
         <button type="submit">Submit</button>
     </form>
-</section>
-</main>
-
-<footer>
-
+    </section>
+    <section>
+        <!-- section with links to my other pages -->
+        <h4>Connect:</h4>
+        <p > <b>GitHub: <a href="https://github.com/JonathanBacourt?tab=repositories">Github Repository</a> 
+        <br> <b>LinkedIn: <a href="www.linkedin.com/in/jonathan-bacourt">LinkedIn profile </a></p>
+    </section>
 </footer>
 
 </html>
