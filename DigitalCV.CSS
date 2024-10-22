@@ -69,13 +69,17 @@ section.bordered{
     z-index: 10;
 
 }
+ol, ul {
+    margin-left: 15px;
+}
 
 @media (min-width: 600px) {
     /* changed page to be mobile friendly and these are the properties
-    to change for desktop */
+    to change for tablet */
     
     .aside{
-        /* format aside  */
+        /* formatted aside takes up most of the screen 
+        and is centered*/
         width: 90%;
         padding-left: 5%;
         background-color: rgb(174, 212, 245);
@@ -88,15 +92,17 @@ section.bordered{
         align-self: center;
     }
     .form{
-        /* center the items in the form */
+        /* center the items in the form and the form with the screen*/
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         border-bottom: 1px black solid;
+        /* add a short color transition */
         transition: background-color 0.2s;
     }
     h2, h1{
+        /* h1 and h2 get back their padding */
         padding-bottom: 15px;
     }
     #contactinfo{
@@ -110,12 +116,14 @@ section.bordered{
         margin: 10px;
         padding: 5px;
         border: 2px black solid;
+        /* make sure the information is to the right */
         float: inline-start;
     }
     ol, ul {
         padding-left: 40px;
     }
     img#Selfie{
+        /* enlarge picture */
         width: 200px;
         height: 200px;
     }
